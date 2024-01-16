@@ -1,10 +1,11 @@
-import { createHtmlPlugin } from "vite-plugin-html";
+import { createHtmlPlugin } from 'vite-plugin-html'
 
 export default function createHtml(env, isBuild) {
-  const { VITE_APP_TITLE } = env;
+  const { VITE_APP_TITLE } = env
   if (isBuild) {
+    //
   }
-  const loadingScript = ``;
+  // const loadingScript = ''
   return createHtmlPlugin({
     inject: {
       data: {
@@ -12,5 +13,5 @@ export default function createHtml(env, isBuild) {
       },
     },
     minify: isBuild,
-  });
+  })
 }
